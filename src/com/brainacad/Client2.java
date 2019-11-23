@@ -13,6 +13,7 @@ public class Client2 {
              PrintWriter out = new PrintWriter(connectToServerSocket.getOutputStream(), true);
              BufferedReader inu = new BufferedReader(new InputStreamReader(System.in));)
         {
+            // Нужно запустить два метода в разных потоках
             sendMessage(out, inu);
             getMessage(in);
         }
